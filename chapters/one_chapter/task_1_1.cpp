@@ -1,0 +1,20 @@
+#include <iostream> // основная библиотека содержащая std::*
+#include <string> // строковый тип переменных
+
+// обьявляем точку входа main с возвращением значения
+int main() {
+    // обьявляем переменные
+    std::string name_user;
+    int age;
+
+    // спрашиваем имя и возраст
+    std::cout << "What you name? > ";
+    std::cin >> name_user; // стрелочки отличаются так как cin тоесть инпут пользователя передаем в переменную
+    std::cout << "What you year? > ";
+    std::cin >> age;
+
+    // переменные должны быть не в тексте а после <<
+    std::cout << "Hello! " << name_user << ", your " << age << " years old" << std::endl;
+
+    return 0; // возвращаем значение
+}
